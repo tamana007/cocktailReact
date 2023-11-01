@@ -3,9 +3,16 @@ import { Link } from 'react-router-dom'
 
 const Error = () => {
   return (
-    <div>
+    <section className='error-page section'>
+      <div className='error-container'>oops!it's a dead end
       <h2>error page</h2>
-    </div>
+   
+        <Link className='btn btn-primary' to="/">Back to home page</Link>
+       
+      
+      
+      </div>
+    </section>
   )
 }
 

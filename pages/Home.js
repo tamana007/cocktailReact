@@ -4,9 +4,12 @@ import SearchForm from '../components/SearchForm'
 
 const Home = () => {
   return (
-    <div>
+    <section className='section'>
       <h2>home page</h2>
-    </div>
+      <SearchForm/>
+      <CocktailList/>
+      
+    </section>
   )
 }
 
