@@ -7,17 +7,21 @@ const url = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='
 
 
 const SingleCocktail = () => {
-  const searchValue=React.useReducer('');
+  const {id}=useParams();
+  // const[loading,useLoading]=React.useState(false);
+  // const [cocktail,setCocktail]=React.useState(null);
+  console.log("my id is "+id);
+
+  React.useEffect(()=>{
+
+  },[id])
 
 
   return (
-    <section className='section search'>
-      <form className='search-form'></form>
-      <div className='form-control'>
-        <label htmlFor='Name'>Search Your favourite cocktail</label>
-        <input ref={searchValue}></input>
-      </div>
-    </section>
+    <div>
+      <h2>hi</h2>
+      
+    </div>
   )
 }
 
